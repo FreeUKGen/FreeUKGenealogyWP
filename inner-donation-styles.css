@@ -110,7 +110,7 @@ input:checked + label {
 #payment-holder .previous {
     background: #ffffff;
     border-style: none;
-    color: #707070;
+    color: #444444;
     box-shadow: none;
 }
 
@@ -130,20 +130,3 @@ input:checked + label {
     background-color: #ffffff;
     text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
 }
-
-/*.payment-holder .button-primary.focus,*/
-/*.payment-holder .button-primary:focus {*/
-/*    box-shadow:*/
-/*            0 0 0 1px #fff,*/
-/*            0 0 0 3px #007cba;*/
-/*}*/
-
-/*.payment-holder .button-primary.active,*/
-/*.payment-holder .button-primary.active:hover,*/
-/*.payment-holder .button-primary.active:focus,*/
-/*.payment-holder .button-primary:active {*/
-/*    background: #00669b;*/
-/*    border-color: #00669b;*/
-/*    box-shadow: none;*/
-/*    color: #fff;*/
-/*}*/
