@@ -1,0 +1,27 @@
+/*
+Theme Name: OceanWP Child
+Description: OceanWP WordPress theme FreeUKGenealogy child theme.
+Author: FreeUKGenealogy
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+@font-face {
+    font-family: 'Museo300-Regular';
+    src: url('Museo300-Regular-webfont.woff2') format('woff2'),
+         url('Museo300-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo500-Regular';
+    src: url('Museo500-Regular-webfont.woff2') format('woff2'),
+         url('Museo500-Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
