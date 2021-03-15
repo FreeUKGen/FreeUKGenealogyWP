@@ -48,6 +48,9 @@ body {
     fill: #F02181 }
 #donate:hover #donateBtn svg, #donate:focus #donateBtn svg  {
     fill: #FFF }
+#donate:hover {
+    text-decoration: none;
+}
 .freeGen #A {fill: #00e5ca}
 .freeGen #B {fill: #00beaa}
 .freeGen #C, .freeGen #donateBtn svg {fill:#009e97; stroke:#009e97}
