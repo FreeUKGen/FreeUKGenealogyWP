@@ -31,7 +31,7 @@ body {
     padding: 3px 45px;
     color: #FFF;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 500;
     z-index: 0 }
 #donateBtn svg {
     position: absolute;
@@ -48,7 +48,7 @@ body {
     fill: #F02181 }
 #donate:hover #donateBtn svg, #donate:focus #donateBtn svg  {
     fill: #FFF }
-#donate:hover {
+#donate {
     text-decoration: none;
 }
 .freeGen #A {fill: #00e5ca}
