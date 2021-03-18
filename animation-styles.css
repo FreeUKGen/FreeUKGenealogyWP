@@ -51,9 +51,9 @@ body {
 #donate {
     text-decoration: none;
 }
-.freeGen #A {fill: #00e5ca}
-.freeGen #B {fill: #00beaa}
-.freeGen #C, .freeGen #donateBtn svg {fill:#009e97; stroke:#009e97}
+.freeGen #A {fill: #A8DBDC}
+.freeGen #B {fill: #28BAA8}
+.freeGen #C, .freeGen #donateBtn svg {fill:#008580; stroke:#008580}
 #donate.freeGen:hover #donateBtn, #donate.freeGen:focus #donateBtn {color: #009e97}
 .freeBMD #A {fill: #f02181}
 .freeBMD #B {fill: #c91b67}
