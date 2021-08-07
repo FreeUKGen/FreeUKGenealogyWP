@@ -106,6 +106,10 @@ input:checked + label {
     padding: 0 10%;
 }
 
+#payment-holder #prev-container {
+    padding: 3% 10% 10% 10%;
+}
+
 #payment-holder .previous {
     background: #ffffff;
     border-style: solid;
