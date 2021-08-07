@@ -92,7 +92,6 @@ var previousEventHandler = function() {
         document.getElementById('title-currency').style.display = 'block';
         if(document.getElementById('currency-selector').style.display !== 'none') {
             dividerContainer.style.display = 'none';
-            prevContainer.style.padding = '10%';
         }
     }
 };
