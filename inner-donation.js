@@ -65,9 +65,6 @@ var advanceClickHandler = function() {
         else {
             var paypalTitle = document.getElementById('title-paypal');
             paypalTitle.style.display = 'block';
-            for(var l = 0; l < previousCollection.length; l++) {
-                previousCollection[l].style.width = "auto";
-            }
         }
 };
 
@@ -83,7 +80,6 @@ var previousEventHandler = function() {
     ) {
         resetGiftaid();
         advanceClickHandler();
-        prevContainer.style.padding = '10%';
         contentCheque.style.display = 'none';
         contentBank.style.display = 'none';
     }
@@ -94,11 +90,7 @@ var previousEventHandler = function() {
         resetGiftaid();
         currencyContent.style.display = 'block';
         document.getElementById('title-currency').style.display = 'block';
-        for(var i = 0; i<previousCollection.length; i++) {
-            previousCollection[i].style.width = "90%";
-        }
         if(document.getElementById('currency-selector').style.display !== 'none') {
-            prevContainer.style.display = 'none';
             dividerContainer.style.display = 'none';
             prevContainer.style.padding = '10%';
         }
@@ -129,18 +121,15 @@ var ukProviderClickHandler = function(event) {
             providerContent.style.display = 'none';
             document.getElementById('giftaid-option').style.display = 'block';
             document.getElementById('giftaid-next').style.display = 'block';
-            prevContainer.style.padding = '0';
 
         }
         if(provider === 'kindlink') {
             document.getElementById('content-kindlink').style.display = 'block';
             resetGiftaid();
-            prevContainer.style.padding = '10%';
         }
         if(provider === 'paypal') {
             document.getElementById('content-paypal').style.display = 'block';
             resetGiftaid();
-            prevContainer.style.padding = '10%';
         }
     }
 };
@@ -171,7 +160,7 @@ var handleGiftaidForm = function() {
             if(document.getElementById('title-cheque').style.display === 'block') {
                 document.getElementById('content-cheque').style.display = 'block';
             }
-            if(document.getElementById('title-bank-transfer').style.display === 'block') {
+            else if(document.getElementById('title-bank-transfer').style.display === 'block') {
                 document.getElementById('content-bank-transfer').style.display = 'block';
             }
         }
