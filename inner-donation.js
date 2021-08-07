@@ -91,8 +91,8 @@ var previousEventHandler = function() {
         currencyContent.style.display = 'block';
         document.getElementById('title-currency').style.display = 'block';
         if(document.getElementById('currency-selector').style.display !== 'none') {
-            dividerContainer.style.display = 'none';
             prevContainer.style.display = 'none';
+            dividerContainer.style.display = 'none';
         }
     }
 };
