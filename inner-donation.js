@@ -7,7 +7,7 @@ var previousCollection = document.getElementsByClassName('previous');
 var currencyContent = document.getElementById('currency-selector');
 var titleDestination = document.getElementById('title-payment');
 var currency = '';
-var giftaidNext = document.getElementsByClassName('next-giftaid');
+var giftaidNext = document.getElementsByClassName('next-giftaid-button');
 var contentBank = document.getElementById('content-bank-transfer');
 var contentCheque = document.getElementById('content-cheque');
 var prevContainer = document.getElementById('prev-container');
@@ -148,7 +148,6 @@ var handleGiftaidForm = function() {
         ukProviderContainer.style.display = 'none';
         document.getElementById('giftaid-eligible').style.display = 'none';
         if (giftaidRadio === 'giftaid') {
-            document.getElementById('giftaid-option').style.display = 'none';
             document.getElementById('giftaid-option').style.display = 'none';
             document.getElementById('giftaid-form').style.display = 'inline';
 
