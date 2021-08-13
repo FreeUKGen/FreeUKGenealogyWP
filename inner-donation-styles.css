@@ -105,7 +105,7 @@ input:checked + label {
     border-width: 3px;
     border-color: #444444;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 3%;
     padding: 0 10%;
 }
 
@@ -150,6 +150,13 @@ input:checked + label {
     padding-top: 8px;
 }
 
+#payment-holder button:focus {
+    border-color: #00857E;
+    color: #00857E;
+    background-color: #ffffff;
+    text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
+}
+
 #payment-holder #gb-pounds-provider-selector button {
     background: #F4F4F4;
     color: #000;
@@ -165,4 +172,8 @@ input:checked + label {
     color: #00857E;
     background-color: #ffffff;
     text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
+}
+
+#payment-holder .currency-fieldset {
+    border-style: hidden;
 }
