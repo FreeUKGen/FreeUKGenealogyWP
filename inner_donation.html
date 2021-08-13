@@ -38,30 +38,33 @@
         <div id="content-selector">
             <div id="currency-selector">
                 <div class="d-inline">
-                    <div class="d-inline-selection">
-                        <input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
-                        <label for="gb-pounds">GBP (£)</label>
-		    </div>
-		    <div class="d-inline-selection">
-			<input type="radio" id="au-dollars" name="drone" value="au-dollars">
-			<label for="au-dollars">AUD ($)</label>
-		    </div>
-		    <div class="d-inline-selection">
-                        <input type="radio" id="us-dollars" name="drone" value="us-dollars">
-                        <label for="us-dollars">USD ($)</label>
-                    </div>
-		    <div class="d-inline-selection">
-                        <input type="radio" id="c-dollars" name="drone" value="c-dollars">
-                        <label for="c-dollars">CAD ($)</label>
-                    </div>
-		    <div class="d-inline-selection">
-			<input type="radio" id="euro" name="drone" value="euro">
-			<label for="euro">EUR (€)</label>
-		    </div>
-		    <div class="d-inline-selection">
-                        <input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
-                        <label for="nz-dollars">NZD ($)</label>
-                    </div>
+			<fieldset class="currency-fieldset">
+				<legend class="accessibility" hidden aria-hidden="true">Currencies</legend>
+		    		<div class="d-inline-selection">
+					<input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
+					<label for="gb-pounds">GBP (£)</label>
+			    	</div>
+				<div class="d-inline-selection">
+					<input type="radio" id="au-dollars" name="drone" value="au-dollars">
+					<label for="au-dollars">AUD ($)</label>
+				</div>
+				<div class="d-inline-selection">
+					<input type="radio" id="us-dollars" name="drone" value="us-dollars">
+					<label for="us-dollars">USD ($)</label>
+				</div>
+				<div class="d-inline-selection">
+					<input type="radio" id="c-dollars" name="drone" value="c-dollars">
+					<label for="c-dollars">CAD ($)</label>
+				</div>
+				<div class="d-inline-selection">
+					<input type="radio" id="euro" name="drone" value="euro">
+					<label for="euro">EUR (€)</label>
+				</div>
+				<div class="d-inline-selection">
+					<input type="radio" id="nz-dollars" name="drone" value="nz-dollars">
+					<label for="nz-dollars">NZD ($)</label>
+				</div>
+			</fieldset>
                 </div>
 	    <div><button id="next-button" type="submit">Next</button></div>
 
@@ -72,33 +75,33 @@
             >
                 <div>
                     <button
-						id="kindlink-button"
-						data-provider="kindlink"
-						style="margin-bottom: 10px;"
-					>
+			id="kindlink-button"
+			data-provider="kindlink"
+			style="margin-bottom: 10px;"
+		>
                         Donate by Card
                     </button>
                 </div>
 
                 <div>
-                    <button data-provider="paypal"
-							style="margin-bottom: 10px;"
-					>
-                        PayPal
-                    </button>
+                    	<button data-provider="paypal"
+				style="margin-bottom: 10px;"
+			>
+                        	PayPal
+	    		</button>
                 </div>
                 <div>
                     <button data-provider="bank-transfer"
-							style="margin-bottom: 10px;"
-					>
-                        Bank Transfer
+				style="margin-bottom: 10px;"
+			>
+                        	Bank Transfer
                     </button>
                 </div>
                 <div>
                     <button data-provider="cheque"
-							style="margin-bottom: 5px;"
-					>
-                        Cheque
+				style="margin-bottom: 5px;"
+			>
+                       		Cheque
                     </button>
                 </div>
             </div>
