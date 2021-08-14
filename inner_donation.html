@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>inner-donation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="inner-donation-styles.css">
 </head>
 <body>
     <div id="payment-holder">
+		<h1 class="accessibility">Set up your payment</h1>
         <div id="title-payment">
             <div id="title-currency">
-                <h3>Select Currency</h3>
+                <h2>Select Currency</h2>
             </div>
             <div id="title-kindlink"
                  style="display: none;"
             >
-				<p></p>
-				<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="Kindlink"/>
+		<p></p>
+		<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="Kindlink"/>
             </div>
             <div id="title-paypal"
                  style="display: none;"
             >
-				<p></p>
+		<p></p>
                 <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal"/>
         	</div>
             <div id="title-bank-transfer"
                  style="display: none;"
             >
-                <h3>Bank Transfer (UK only)</h3>
+                <h2>Bank Transfer (UK only)</h2>
             </div>
             <div id="title-cheque"
                  style="display: none;">
-                <h3>Cheque (UK only)</h3>
+                <h2>Cheque (UK only)</h2>
             </div>
         </div>
 
@@ -39,11 +40,11 @@
             <div id="currency-selector">
                 <div class="d-inline">
 			<fieldset class="currency-fieldset">
-				<legend class="accessibility" hidden aria-hidden="true">Currencies</legend>
-		    		<div class="d-inline-selection">
+				<legend class="accessibility">Currencies</legend>
+				<div class="d-inline-selection">
 					<input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
 					<label for="gb-pounds">GBP (£)</label>
-			    	</div>
+				</div>
 				<div class="d-inline-selection">
 					<input type="radio" id="au-dollars" name="drone" value="au-dollars">
 					<label for="au-dollars">AUD ($)</label>
@@ -52,6 +53,7 @@
 					<input type="radio" id="us-dollars" name="drone" value="us-dollars">
 					<label for="us-dollars">USD ($)</label>
 				</div>
+
 				<div class="d-inline-selection">
 					<input type="radio" id="c-dollars" name="drone" value="c-dollars">
 					<label for="c-dollars">CAD ($)</label>
@@ -65,9 +67,8 @@
 					<label for="nz-dollars">NZD ($)</label>
 				</div>
 			</fieldset>
-                </div>
-	    <div><button id="next-button" type="submit">Next</button></div>
-
+		</div>
+		<div><button id="next-button" type="submit">Next</button></div>
             </div>
             <div
                  id="gb-pounds-provider-selector"
@@ -78,71 +79,71 @@
 			id="kindlink-button"
 			data-provider="kindlink"
 			style="margin-bottom: 10px;"
-		>
+			>
                         Donate by Card
                     </button>
                 </div>
 
                 <div>
-                    	<button data-provider="paypal"
-				style="margin-bottom: 10px;"
+                    <button data-provider="paypal"
+			style="margin-bottom: 10px;"
 			>
-                        	PayPal
-	    		</button>
+                        PayPal
+                    </button>
                 </div>
                 <div>
                     <button data-provider="bank-transfer"
-				style="margin-bottom: 10px;"
+			style="margin-bottom: 10px;"
 			>
-                        	Bank Transfer
+                        Bank Transfer
                     </button>
                 </div>
                 <div>
                     <button data-provider="cheque"
-				style="margin-bottom: 5px;"
+			style="margin-bottom: 5px;"
 			>
-                       		Cheque
+                        Cheque
                     </button>
                 </div>
             </div>
             <div
                 id="us-dollars-provider-selector"
                 style="display: none;
-				padding: 15%;"
-			>
-				<h4 style="padding-bottom: 2%">USD ($)</h4>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-					/>
-					<img alt="paypal" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+			padding: 15%;"
+		>
+			<h3 style="padding-bottom: 2%">USD ($)</h3>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="JKB65FJGRATHS" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+					   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+				/>
+				<img alt="paypal" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+			</form>
             </div>
             <div id="c-dollars-provider-selector"
                  style="display: none;
-				padding: 15%;"
-			>
-				<h4 style="padding-bottom: 2%">CAD ($) - English</h4>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-					/>
-					<img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
-				</form>
-				<h4 style="padding-bottom: 2%">CAD ($) - French</h4>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
-					<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-					<img alt="" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+			padding: 15%;"
+		>
+			<h3 style="padding-bottom: 2%">CAD ($) - English</h3>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="3XMXJ8NHXLZR8" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+					   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+				/>
+				<img alt="" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+			<h3 style="padding-bottom: 2%">CAD ($) - French</h3>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="G5GD3T86WYPPW" />
+				<input type="image" src="https://www.paypalobjects.com/fr_CA/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+				<img alt="" src="https://www.paypal.com/fr_CA/i/scr/pixel.gif" width="1" height="1" />
+			</form>
             </div>
             <div id="au-dollars-provider-selector"
                  style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">AUD ($)</h4>
+		<h3 style="padding-bottom: 2%">AUD ($)</h3>
                 <form action="https://www.paypal.com/donate" method="post" target="_top">
                     <input type="hidden" name="hosted_button_id" value="VKBJ5SAZRT3HW" />
                     <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif"
@@ -155,35 +156,34 @@
                  style="display: none;
 				padding: 15%;"
 			>
-				<h4 style="padding-bottom: 2%">NZD ($)</h4>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-					/>
-					<img alt="" src="https://www.paypal.com/en_NZ/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+			<h3 style="padding-bottom: 2%">NZD ($)</h3>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="83G6ZDU5V8HZ4" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+					   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+				/>
+				<img alt="" src="https://www.paypal.com/en_NZ/i/scr/pixel.gif" width="1" height="1" />
+			</form>
             </div>
             <div id="euro-provider-selector"
                  style="display: none;
 				padding: 15%;"
-			>
-				<h4 style="padding-bottom: 2%">EUR (€)</h4>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
-					<input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif"
-						   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
-					/>
-					<img alt="" src="https://www.paypal.com/en_FR/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+		>
+			<h3 style="padding-bottom: 2%">EUR (€)</h3>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="GXWGGPW8QNMLL" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/FR/i/btn/btn_donateCC_LG.gif"
+					   name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"
+				/>
+				<img alt="" src="https://www.paypal.com/en_FR/i/scr/pixel.gif" width="1" height="1" />
+			</form>
             </div>
 
         </div>
-        <div
-			id="content-destination">
-			<div id="break-container" style="display: none;">
-				<hr style="width: 90%">
-			</div>
+        <div id="content-destination">
+		<div id="break-container" style="display: none;">
+			<hr style="width: 90%">
+		</div>
             <div id="content-default">
 
             </div>
@@ -191,73 +191,35 @@
                 id="content-kindlink"
                 style="display: none;"
             >
-				<div class="offsite">
-					<div>
-						<p>Donate by Card via</p>
-							<a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
-								<button id="kindlink-offsite-button">
-									<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="kindlink button">
-								</button>
-						</a>
-					</div>
+			<div class="offsite">
+				<div>
+					<p>Donate by Card via</p>
+					<a href="https://donate.kindlink.com/free-uk-genealogy/3553" target="_top">
+						<button id="kindlink-offsite-button" tabindex="-1">
+							<img src="https://www.kindlink.com/img/kindlink-logo.svg" alt="kindlink button">
+						</button>
+					</a>
 				</div>
-            </div>
-			<div
-				id="giftaid-eligible"
-				style="display: none;
-				line-height: 0.5;"
-			>
-				<p>Increase your donation by 25%.</p>
-				<p><a
-					href="https://www.gov.uk/donating-to-charity/gift-aid"
-					target="_blank"
-				>Find out</a> if you can Gift Aid your</p>
-				<p>donation.</p>
 			</div>
+            </div>
             <div
-				id="content-paypal"
-				style="display: none;"
+		id="content-paypal"
+		style="display: none;"
             >
-				<div class="offsite">
-					<p style="margin-bottom: 10%;">Donate via PayPal</p>
-					<form action="https://www.paypal.com/donate" method="post" target="_top">
-						<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
-						<input
-							type="image"
-							src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
-							name="submit" title="PayPal - The safer, easier way to pay online!"
-							alt="Donate with PayPal button"
-						/>
-						<img alt="paypal" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
-					</form>
-				</div>
+		<div class="offsite">
+			<p style="margin-bottom: 10%">Donate via PayPal</p>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="MBP798XKMCCP4" />
+				<input
+					type="image"
+					src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+					name="submit" title="PayPal - The safer, easier way to pay online!"
+					alt="Donate with PayPal button"
+				/>
+				<img alt="paypal" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+			</form>
+		</div>
             </div>
-			<div id="giftaid-option"
-				style="display: none;
-				padding: 5px;">
-				<div class="d-inline">
-					<div>
-						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid" checked>
-						<label for="with-giftaid-transfer">Donate with Gift Aid</label>
-					</div>
-
-					<div>
-						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
-						<label for="without-giftaid-transfer">Donate without Gift Aid</label>
-					</div>
-				</div>
-
-			</div>
-			<div id="giftaid-form"
-				 style="display: none;"
-			 >
-				<iframe
-					class="form-iframe"
-					src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
-					width="280"
-					height="400"
-				>Loading…</iframe>
-			</div>
             <div
                     id="content-bank-transfer"
                     style="display: none;"
@@ -265,17 +227,17 @@
                     <div>
                         <p>
                     		Funds can be transferred directly to Free UK Genealogy's bank account using internet banking.
-                		</p>
-						<h3>
-							Account Details
-						</h3>
-						<div class="transfer-list">
-							<ul style="list-style: none">
-								<li>Sort Code: 40-52-40</li>
-								<li>Account Number: 00025629</li>
-								<li>Account Name: Free UK Genealogy</li>
-							</ul>
-						</div>
+			</p>
+			<h2>
+				Account Details
+			</h2>
+			<div class="transfer-list">
+				<ul style="list-style: none">
+					<li>Sort Code: 40-52-40</li>
+					<li>Account Number: 00025629</li>
+					<li>Account Name: Free UK Genealogy</li>
+				</ul>
+			</div>
                     </div>
 
             </div>
@@ -301,27 +263,62 @@
 			</div>
                     </div>
             </div>
+			<div
+				id="giftaid-eligible"
+				style="display: none;
+				line-height: 0.5;"
+			>
+				<p>Increase your donation by 25%.</p>
+				<p><a
+					href="https://www.gov.uk/donating-to-charity/gift-aid"
+					target="_blank"
+				>Find out</a> if you can Gift Aid your</p>
+				<p>donation.</p>
+			</div>
+			<div id="giftaid-option"
+				 style="display: none;
+				padding: 5px;">
+				<div class="d-inline">
+					<div>
+						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid" checked>
+						<label for="with-giftaid-transfer">Donate with Gift Aid</label>
+					</div>
+
+					<div>
+						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
+						<label for="without-giftaid-transfer">Donate without Gift Aid</label>
+					</div>
+				</div>
+
+			</div>
+			<div id="giftaid-form"
+				 style="display: none;"
+			>
+				<iframe
+					id="form-iframe"
+					src="https://docs.google.com/forms/d/e/1FAIpQLSdNF3GT1vXZjwNocEDbiWUpvtsVAhxzWNbbDLQ9LreH5DiA1g/viewform?embedded=true"
+					width="280"
+					height="400"
+				>Loading…</iframe>
+			</div>
         </div>
 
 		<div id="redirect-next"
 			 style="display: none;"
-		 >
-			<a href="https://wp1.freeukgen.org.uk/thank-you" target="_top"><button class="next-redirect-button">Next</button></a>
+		>
+			<a href="https://wp1.freeukgen.org.uk/thank-you"><button class="next-redirect-button">Next</button></a>
 		</div>
 
 		<div id="giftaid-next"
 			style="display: none;"
-	         >
+		>
 			<button class="next-giftaid-button">Next</button>
 		</div>
 
 		<div id="prev-container"
-			 style="display: none;"
-		>
+			 style="display: none;">
 			<div>
-				<button class="previous">
-					Previous
-				</button>
+				<button class="previous">Previous</button>
 			</div>
 		</div>
     </div>
