@@ -60,7 +60,11 @@ input:checked + label {
     font-style: normal;
 }
 
- /*Primary Button Rounded*/
+ #payment-holder h2 {
+    font-size: large;
+}
+
+/*Primary Button Rounded*/
 #payment-holder button {
     display: inline-block;
     text-decoration: none;
