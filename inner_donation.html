@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="inner-donation-styles.css">
 </head>
 <body>
+<section>
     <div id="payment-holder">
 		<h1 class="accessibility">Set up your payment</h1>
         <div id="title-payment">
@@ -39,7 +40,7 @@
         <div id="content-selector">
             <div id="currency-selector">
                 <div class="d-inline">
-			<fieldset class="currency-fieldset">
+			<fieldset class="donation-fieldset">
 				<legend class="accessibility">Currencies</legend>
 				<div class="d-inline-selection">
 					<input type="radio" id="gb-pounds" name="drone" value="gb-pounds" checked>
@@ -279,15 +280,17 @@
 				 style="display: none;
 				padding: 5px;">
 				<div class="d-inline">
-					<div>
-						<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid" checked>
-						<label for="with-giftaid-transfer">Donate with Gift Aid</label>
-					</div>
+					<fieldset class="donation-fieldset">
+						<div>
+							<input type="radio" id="with-giftaid-transfer" name="ga-selector" value="giftaid" checked>
+							<label for="with-giftaid-transfer">Donate with Gift Aid</label>
+						</div>
 
-					<div>
-						<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
-						<label for="without-giftaid-transfer">Donate without Gift Aid</label>
-					</div>
+						<div>
+							<input type="radio" id="without-giftaid-transfer" name="ga-selector" value="without">
+							<label for="without-giftaid-transfer">Donate without Gift Aid</label>
+						</div>
+					</fieldset>
 				</div>
 
 			</div>
@@ -322,6 +325,7 @@
 			</div>
 		</div>
     </div>
+</section>
 	<script src="./inner-donation.js"></script>
 </body>
 </html>
