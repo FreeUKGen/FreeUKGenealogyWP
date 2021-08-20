@@ -178,7 +178,7 @@ input:checked + label {
     text-shadow: 0.5px 0 0 #555, -0.5px 0 0 #555;
 }
 
-#payment-holder .currency-fieldset {
+#payment-holder .donation-fieldset {
     border-style: hidden;
 }
 
